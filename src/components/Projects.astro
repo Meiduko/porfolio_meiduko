@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content'
+import Project from './Project.astro'
+
+const projects = await getCollection('projects')
+
+console.log('Projects:', projects)
+---
+
+<section id='Projects' class=''>
+  <h3 class='text-3xl'>
+    <span class='text-4xl'>&lt;/&gt;</span>
+    Projects:
+  </h3>
+  <div class='border-l-3 border-white pl-12 flex flex-col gap-y-18'>
+    {
+      projects.map(project => {
+        const { data } = project
+        return <Project project={data} key={project.id} />
+      })
+    }
+  </div>
+</section>

@@ -1,0 +1,34 @@
+---
+import { type techType, iconMap } from '@/utils/select_icon'
+
+const project = Astro.props.project
+const { name, description, thumbnailPath, technologies } = project
+---
+
+<article class='flex flex-col md:flex-row gap-8'>
+  <div
+    class='absolute left-1/12 md:left-2/12 xl:left-3/12 size-3.5 -translate-x-[calc(50%-1.5px)] rounded-full bg-yellow-500'
+  >
+  </div>
+  <img
+    src={thumbnailPath}
+    class='w-2/3 md:w-1/2 lg:w-1/3 h-2/3 md:h-1/2 lg:h-1/3 rounded-lg aspect-auto'
+    alt={`Photo of the project: ${name}`}
+  />
+  <div>
+    <h4 class='text-3xl'>{name}</h4>
+    <p class='text-xl'>{description}</p>
+    <ul class='flex flex-row gap-x-4 pt-4'>
+      {
+        technologies.map((tech: techType) => {
+          const Icon = iconMap[tech]
+          return Icon ? (
+            <li>
+              <Icon title={tech} class='size-6' />
+            </li>
+          ) : null
+        })
+      }
+    </ul>
+  </div>
+</article>
