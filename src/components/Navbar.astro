@@ -1,14 +1,16 @@
 ---
 import HomeIcon from '@/assets/icons/HomeIcon.astro'
 import ProjectsIcon from '@/assets/icons/ProjectsIcon.astro'
-import Layout from '@/layouts/Layout.astro'
 ---
 
-<nav class='absolute top-0 w-full flex items-center justify-evenly py-3'>
+<nav class='sticky top-0 w-full flex items-center justify-evenly py-3'>
   <HomeIcon
     class='size-8 md:size-12 transition-transform hover:scale-125 hover:translate-y-1'
   />
-  <h2 class='text-3xl md:text-4xl font-semibold tracking-wide'>Meiduko</h2>
+  <h2 class='text-3xl hidden sm:block md:text-4xl font-semibold tracking-wide'>
+    Meiduko
+  </h2>
+  <h2 class='text-3xl font-semibold tracking-tight block sm:hidden'>MDK</h2>
   <ProjectsIcon
     class='size-8 md:size-12 transition-transform hover:scale-125 hover:translate-y-1'
   />
