@@ -3,7 +3,9 @@ import HomeIcon from '@/assets/icons/HomeIcon.astro'
 import ProjectsIcon from '@/assets/icons/ProjectsIcon.astro'
 ---
 
-<nav class='sticky top-0 w-full flex items-center justify-evenly py-3'>
+<nav
+  class='sticky backdrop-blur-xs top-0 w-full flex items-center justify-evenly py-3'
+>
   <HomeIcon
     class='size-8 md:size-12 transition-transform hover:scale-125 hover:translate-y-1'
   />
@@ -12,6 +14,7 @@ import ProjectsIcon from '@/assets/icons/ProjectsIcon.astro'
   </h2>
   <h2 class='text-3xl font-semibold tracking-tight block sm:hidden'>MDK</h2>
   <ProjectsIcon
+    id='ToggleTheme'
     class='size-8 md:size-12 transition-transform hover:scale-125 hover:translate-y-1'
   />
 </nav>
