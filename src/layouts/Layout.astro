@@ -1,16 +1,19 @@
 ---
 import '@/styles/global.css'
+const currentLocale = Astro.currentLocale
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang={currentLocale} data-theme='dark'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
     <script>
+      import { setInitialLang } from '@/utils/select_language'
       import { setTheme } from '@/utils/select_theme'
+      setInitialLang()
       setTheme()
     </script>
     <title>Porfolio de Meiduko</title>
