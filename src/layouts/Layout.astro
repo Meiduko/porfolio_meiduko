@@ -11,9 +11,9 @@ const currentLocale = Astro.currentLocale
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
     <script>
-      import { setInitialLang } from '@/utils/select_language'
+      import { setLang } from '@/utils/select_language'
       import { setTheme } from '@/utils/select_theme'
-      setInitialLang()
+      setLang()
       setTheme()
     </script>
     <title>Porfolio de Meiduko</title>

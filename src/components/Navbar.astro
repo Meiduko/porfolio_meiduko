@@ -4,7 +4,7 @@ import ProjectsIcon from '@/assets/icons/ProjectsIcon.astro'
 ---
 
 <nav
-  class='sticky backdrop-blur-xs top-0 w-full flex items-center justify-evenly py-3'
+  class='sticky z-10 backdrop-blur-xs top-0 w-full flex items-center justify-evenly py-3'
 >
   <HomeIcon
     class='size-8 md:size-12 transition-transform hover:scale-125 hover:translate-y-1'
@@ -17,4 +17,12 @@ import ProjectsIcon from '@/assets/icons/ProjectsIcon.astro'
     id='ToggleTheme'
     class='size-8 md:size-12 transition-transform hover:scale-125 hover:translate-y-1'
   />
+  <select
+    id='selectLang'
+    class='bg-white/40 px-3 py-1 rounded-lg focus:rounded-b-none appearance-none'
+  >
+    <option value='en' class='text-black'> en </option>
+    <option value='es' class='text-black'> es </option>
+    <option value='gl' class='text-black'> gl </option>
+  </select>
 </nav>

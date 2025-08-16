@@ -1,13 +1,33 @@
 const html = document.querySelector('html')
+const langSelector = document.getElementById('selectLang') as HTMLSelectElement
 
 const systemLang = navigator.language 
 const currentLang = document.documentElement.lang
-const preferredLang = localStorage.getItem('lang')
+const storedLang = localStorage.getItem('lang')
+const langTo = storedLang ?? systemLang
 
-export const setInitialLang = () =>{
-    localStorage.setItem('lang', currentLang)
-    if (currentLang !== systemLang) {
-    window.location.replace(`/${systemLang}`)
-    html?.setAttribute('lang', currentLang)
+const setInitialLang = () =>{
+  langSelector.value = langTo
+  if(currentLang !== langTo) {
+    localStorage.setItem('lang', langTo)
+    window.location.replace(`/${langTo}`)
+    html?.setAttribute('lang', langTo)
   }
+}
+
+const selectLang= () =>{
+  const newLang = langSelector.value
+  if (newLang !== currentLang){
+    localStorage.lang = newLang
+    window.location.reload()
+  }
+}
+
+const selectLangListener = () => {
+  langSelector.addEventListener('change', selectLang)
+}
+
+export const setLang = () =>{
+  setInitialLang()
+  selectLangListener()
 }
