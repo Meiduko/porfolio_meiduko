@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
 <section id='Title' class='flex flex-col gap-12 items-center justify-center'>
   <div class='flex flex-row items-baseline justify-start gap-6'>
     <img
@@ -8,12 +15,13 @@
     <h1
       class='text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold tracking-tight -translate-y-3'
     >
-      Hi, I'm Meiduko
+      {t('Title.h1')}
     </h1>
   </div>
   <p class='text-xl md:text-2xl text-pretty tracking-wide'>
-    <span class='text-yellow-400 font-medium'> +2 years</span>
-    studying front-end web programming with the most popular tools. I strive to tackle
-    any challenge in the most creative and efficient way possible.
+    <span class='text-yellow-400 font-medium'>
+      {t('Title.span')}
+    </span>
+    {t('Title.p')}
   </p>
 </section>

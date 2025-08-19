@@ -1,5 +1,9 @@
 ---
 import { TECHENUM, iconMap } from '@/utils/select_icon'
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <section class='w-full'>
@@ -7,36 +11,28 @@ import { TECHENUM, iconMap } from '@/utils/select_icon'
     class='flex flex-col justify-start gap-y-4 md:gap-y-10 text-xl md:text-2xl dark:text-white/90 text-black/80'
   >
     <p>
-      My name is Borja and I'm from Galicia, Spain. I learned by my self with
-      the help of many programming popularizers as
-      <a
-        target='_blank'
-        href='https://www.youtube.com/@midudev'
-        class='text-[#09f]'>@Midudev</a
-      >
+      {t('About.p1')}
     </p>
     <p>
-      I'm a junior frontend developer passionate about building
-      <span class='text-yellow-400 font-semibold'> user-friendly </span>
-      and visually engaging web experiences.
+      {t('About.p2.1')}
+      <span class='text-yellow-400 font-semibold'>{t('About.p2.span')} </span>
+      {t('About.p2.2')}
     </p>
     <p>
-      I
-      <span class='text-yellow-400 font-semibold'> enjoy learning </span>
-      new technologies and finding creative solutions to challenges, turning ideas
-      into clean and functional code. With a strong focus on
-      <span class='text-yellow-400 font-semibold'> detail </span>
-      and
-      <span class='text-yellow-400 font-semibold'> adaptability. </span>
+      {t('About.p3.1')}
+      <span class='text-yellow-400 font-semibold'> {t('About.p3.span.1')}</span>
+      {t('About.p3.2')}
+      <span class='text-yellow-400 font-semibold'>
+        {t('About.p3.span.2')}
+      </span>
     </p>
     <p>
-      I aim to create interfaces that not only look great but also work
-      seamlessly.
+      {t('About.p4')}
     </p>
     <p>
-      With solid
-      <span class='text-yellow-400 font-semibold'> knowledge </span>
-      of:
+      {t('About.p5.1')}
+      <span class='text-yellow-400 font-semibold'>{t('About.p5.span')} </span>
+      {t('About.p5.2')}
     </p>
   </div>
   <ul class='w-full flex flex-row flex-wrap justify-center gap-x-8 mt-4'>
