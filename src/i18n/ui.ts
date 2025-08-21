@@ -1,15 +1,15 @@
 export const languages = {
-  en: 'English',
-  es: 'Español',
-  gl: 'Galego'
+  en: "English",
+  es: "Español",
+  gl: "Galego"
 }
-export const defaultLang = 'es'
+export const defaultLang = "es"
 
 export const ui = {
   es: {
-    'Title.h1': 'Hola, soy Meiduko',
-    'Title.span': '+2 años',
-    'Title.p': 'Estudiando desarrollo web y diseño UI/UX con las herramientas más populares.',
+    "Title.h1": "Hola, soy Meiduko",
+    "Title.span": "+2 años",
+    "Title.p": "Estudiando desarrollo web y diseño UI/UX con las herramientas más populares.",
     "Projects.h3": "Proyectos",
     "About.p1": "Mi nombre es Borja y soy de Galicia, España. Desde pequeño me ha interesado la tecnología, pero no fue hasta 2022 que decidí estudiar desarrollo web, y dadas las circunstancias, me he visto obligado a aprender de forma autodidacta, con la ayuda de cursos online y divulgadores de tecnología.",
     "About.p2.1": "Soy un desarrollador junior con experiencia en diversas tecnologías web que disfruta construyendo aplicaciones y herramientas",
@@ -26,9 +26,9 @@ export const ui = {
     "About.p5.2": "de: ",
   },
   gl: {
-    'Title.h1': 'Ola, son Meiduko',
-    'Title.span': '+2 anos',
-    'Title.p': 'Estudando desenvolvemento web e deseño UI/UX coas ferramentas máis populares',
+    "Title.h1": "Ola, son Meiduko",
+    "Title.span": "+2 anos",
+    "Title.p": "Estudando desenvolvemento web e deseño UI/UX coas ferramentas máis populares",
     "Projects.h3": "Proxectos",
     "About.p1": "O meu nome é Borja e son de Galicia, España. Dende pequeno intereseime pola tecnoloxía, pero non foi ata 2022 cando decidín estudar desenvolvemento web e, dadas as circunstancias, vinme obrigado a aprender de forma autodidacta, coa axuda de cursos en liña e divulgadores de tecnoloxía.",
     "About.p2.1": "Son un desenvolvedor júnior con experiencia en diversas tecnoloxías web que goza construíndo aplicacións e ferramentas",
@@ -44,11 +44,11 @@ export const ui = {
     "About.p5.2": "de: ",
   },
   en: {
-    'Title.h1': "Hi, I'm Meiduko",
-    'Title.span': '+2 years',
-    'Title.p': 'studying front-end web programming with the most popular tools. I strive to tackle any challenge in the most creative and efficient way possible.',
+    "Title.h1": "Hi, I'm Meiduko",
+    "Title.span": "+2 years",
+    "Title.p": "studying front-end web programming with the most popular tools. I strive to tackle any challenge in the most creative and efficient way possible.",
     "Projects.h3": "Projects",
-    "About.p1": "My name is Borja and I am from Galicia, Spain. I have been interested in technology since I was a child, but it wasn’t until 2022 that I decided to study web development. Given the circumstances, I have had to learn in a self-taught way, with the help of online courses and technology educators.",
+    "About.p1": "My name is Borja and I am from Galicia, Spain. I have been interested in technology since I was a child, but it wasn't until 2022 that I decided to study web development. Given the circumstances, I have had to learn in a self-taught way, with the help of online courses and technology educators.",
     "About.p2.1": "I am a junior developer with experience in various web technologies who enjoys building",
     "About.p2.span": "user-friendly",
     "About.p2.2": ", efficient, and scalable applications and tools. I love learning new technologies and constantly improving my skills.",

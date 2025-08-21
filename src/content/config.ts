@@ -7,7 +7,11 @@ const projects = defineCollection({
   loader: glob({pattern: '**/content/projects/*.md'}),
   schema: z.object({
     name: z.string(),
-    description: z.string(),
+    description: z.object({
+      es: z.string(),
+      en: z.string(),
+      gl: z.string()
+    }),
     thumbnailPath: z.string(),
     technologies: z.array(z.enum(TECHENUM)),
   })
