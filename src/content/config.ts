@@ -14,6 +14,8 @@ const projects = defineCollection({
     }),
     thumbnailPath: z.string(),
     technologies: z.array(z.enum(TECHENUM)),
+    Url: z.string().url().optional(),
+    repo: z.string().url()
   })
 })
 

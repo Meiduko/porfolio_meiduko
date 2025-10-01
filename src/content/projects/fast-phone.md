@@ -7,4 +7,6 @@ description: {
 }
 thumbnailPath: /fast-phone-thumbnail.png
 technologies: [Astro, React, TailwindCSS]
+repo: https://github.com/Meiduko/fast-phone
+Url: https://fast-phone.vercel.app/
 ---

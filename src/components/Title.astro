@@ -5,12 +5,15 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<section id='Title' class='flex flex-col gap-12 items-center justify-center'>
+<section
+  id='Title'
+  class='pt-20 flex flex-col gap-12 items-center justify-center'
+>
   <div class='flex flex-row items-baseline justify-start gap-6'>
     <img
-      src='https://unavatar.io/meiduko'
-      alt=''
-      class='size-16 sm:size-18 md:size-20 xl:size-24 rounded-full'
+      src='meiduko.webp'
+      alt='Me in a good day'
+      class='size-16 sm:size-18 md:size-20 xl:size-28 rounded-full'
     />
     <h1
       class='text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold tracking-tight -translate-y-3'
