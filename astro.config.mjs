@@ -12,7 +12,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-  site: 'http://192.168.1.11:4321/',
+  site: 'https://porfolio-meiduko.vercel.app/',
   output: 'server',
   i18n: {
     defaultLocale: 'es',
