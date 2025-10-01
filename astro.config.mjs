@@ -12,7 +12,6 @@ export default defineConfig({
   },
 
   site: 'https://porfolio-meiduko.vercel.app/',
-  output: 'server',
 
   i18n: {
     defaultLocale: 'es',
