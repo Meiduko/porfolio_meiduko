@@ -1,12 +1,18 @@
 ---
 import '@/styles/global.css'
 const currentLocale = Astro.currentLocale
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 ---
 
 <!doctype html>
 <html lang={currentLocale} data-theme='dark'>
   <head>
     <meta charset='UTF-8' />
+    <title>{t('Title')}</title>
+    <meta name='description' content={t('Description')} />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
@@ -16,7 +22,6 @@ const currentLocale = Astro.currentLocale
       setLang()
       setTheme()
     </script>
-    <title>Porfolio de Meiduko</title>
   </head>
   <body class='dark:bg-[#080616] bg-[#aaa] dark:text-white text-gray-800'>
     <slot />
