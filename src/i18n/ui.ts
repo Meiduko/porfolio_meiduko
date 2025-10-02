@@ -9,6 +9,7 @@ export const ui = {
   es: {
     "Title": "Portafolio de Meiduko",
     "Description": "Portafolio de Meiduko, desarrollador web y diseñador UI/UX",
+    "ThumbailPath": "/porfolio-thumbnail-es.png",
     "Title.h1": "Hola, soy Meiduko",
     "Title.span": "+2 años",
     "Title.p": "Estudiando desarrollo web y diseño UI/UX con las herramientas más populares.",
@@ -30,6 +31,7 @@ export const ui = {
   gl: {
     "Title": "Portafolio de Meiduko",
     "Description": "Portafolio de Meiduko, desenvolvedor web y diseñador UI/UX",
+    "ThumbailPath": "/porfolio-thumbnail-gl.png",
     "Title.h1": "Ola, son Meiduko",
     "Title.span": "+2 anos",
     "Title.p": "Estudando desenvolvemento web e deseño UI/UX coas ferramentas máis populares",
@@ -50,6 +52,7 @@ export const ui = {
   en: {
     "Title": "Meiduko`s Portfolio",
     "Description": "Meiduko`s portfolio, web developer & UI/UX designer",
+    "ThumbailPath": "/porfolio-thumbnail-en.png",
     "Title.h1": "Hi, I'm Meiduko",
     "Title.span": "+2 years",
     "Title.p": "studying front-end web programming with the most popular tools. I strive to tackle any challenge in the most creative and efficient way possible.",

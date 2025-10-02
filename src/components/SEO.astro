@@ -1,0 +1,20 @@
+---
+import { getLangFromUrl, useTranslations } from '@/i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const title = t('Title')
+const description = t('Description')
+const url = Astro.site
+const image = t('ThumbailPath')
+---
+
+<title>{title}</title>
+<meta name='description' content={description} />
+
+<!-- Open Graph -->
+<meta property='og:type' content='website' />
+<meta property='og:url' content={url} />
+<meta property='og:title' content={title} />
+<meta property='og:description' content={description} />
+<meta property='og:image' content={new URL(image, url)} />
