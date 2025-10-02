@@ -12,6 +12,8 @@ export default defineConfig({
   },
 
   site: 'https://porfolio-meiduko.vercel.app/',
+  output: 'static',
+  adapter: vercel(),
 
   i18n: {
     defaultLocale: 'es',
@@ -21,6 +23,4 @@ export default defineConfig({
       redirectToDefaultLocale: false,
     }
   },
-
-  adapter: vercel(),
 });
